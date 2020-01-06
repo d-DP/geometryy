@@ -1,0 +1,20 @@
+\begin{tikzpicture}[scale =2.5,>=stealth,point/.style = {draw, circle, fill = black, inner sep = 2pt},]
+\node (M) at (0,0)[point,label=below right :$\textbf{M(0,0)}$] {};
+\node (I) at (3.5,0)[point,label=below right :$\textbf{I(3.5,0)}$] {};
+
+\node (S) at (5.18232379,6.27851787)[point,label=above right :$\textbf{S(5.18,6.27)}$] {};
+\node (T) at (2.42196082,9.03888084)[point,label=above :$\textbf{T(2.42,9.03)}$] {};
+\draw (M) --node[below ] {$\textbf{a=3.5cm}$}(I)--node[below ] {$\textbf{b	=3.5cm}$}(S)--(T)--(M);
+\draw (M) --node[below ] {$\textbf{c=3.5cm}$}(S);
+\tkzMarkAngle[fill=black!45,size=.3,mark=](I,M,S)
+\tkzLabelAngle[pos=0.65](I,M,S){}
+\tkzMarkAngle[fill=black!45,size=.3,mark=](S,M,T)
+\tkzLabelAngle[pos=0.65](S,M,T){$75\degree$}
+\tkzMarkAngle[fill=black!45,size=.3,mark=](S,I,M)
+\tkzLabelAngle[pos=0.65](S,I,M){$105\degree$}
+
+\tkzMarkAngle[fill=black!45,size=.3,mark=](T,S,I)
+\tkzLabelAngle[pos=0.65](T,S,I){$120\degree$}
+\tkzMarkAngle[fill=black!45,size=.3,mark=](M,T,S)
+\tkzLabelAngle[pos=0.65](M,T,S){$75\degree$}
+\end{tikzpicture}

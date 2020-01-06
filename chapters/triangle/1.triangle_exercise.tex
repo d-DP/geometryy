@@ -1,0 +1,71 @@
+\begin{frame}{Triangle exercise}
+\begin{enumerate}
+\item ABC and AMP are two right triangles, right angled at B and M respectively. M lies on AC and AB is extended to meet P. Prove that:
+\seti
+\begin{enumerate}
+\item $\triangle{ABC} \sim \triangle{AMP}$
+\item $\frac{CA}{PA}=\frac{BC}{MP}$
+\end{enumerate}
+\end{enumerate}
+\textbf{Solution:}
+\begin{itemize}
+\item Consturct a right triangle ABC with a=4, c=3
+\item Direction vector m= A-C
+\item Representation of AC $n^T(x-A)=0$ and PM $m^T(x-P)=0$
+\end{itemize}
+\begin{align}
+\begin{pmatrix}
+m & n
+\end{pmatrix}^T M=\begin{pmatrix}
+m^T P\\
+n^T A
+\end{pmatrix}
+\end{align}
+\end{frame}
+\begin{frame}
+\begin{figure}[!ht]
+\resizebox{.7\linewidth}{!}
+{
+\input{./figs/triangle/1.triangle_exercise_fig}
+
+}
+\caption{tikz figure}
+\label{fig:foo}
+\end{figure}
+\end{frame}
+\begin{frame}
+\begin{figure}[!ht]
+\resizebox{.5\linewidth}{!}
+{
+
+\includegraphics[scale=1.2]{./figs/triangle/tri.png}
+}
+\caption{Python generated figure}
+\label{fig:foo}
+\end{figure}
+\begin{itemize}
+\item \textbf{Python:} \url{https://github.com/d-DP/geometryy/blob/master/codes/triangle/1.tri_exe.py}
+\item \textbf{Tkz:} \url{https://github.com/d-DP/geometryy/blob/master/figs/triangle/1.triangle_exercise_fig.tex}
+\end{itemize}
+
+\end{frame}
+\begin{frame}
+From the above figure
+\begin{align}
+	\angle{CAB} =\angle{MAP} \\
+	\angle{ABC} = \angle{AMP}
+\end{align}
+From 1 and 2
+\begin{align}
+\triangle{ABC} \sim \triangle{AMP}
+\end{align}
+\begin{itemize}
+\item As correspondinng sides are proportional
+$\frac{CA}{PA}=\frac{BC}{MP}=\frac{AB}{AM}$
+
+\begin{center}
+$\frac{CA}{PA}=\frac{BC}{MP}$
+\end{center}
+\end{itemize}
+
+\end{frame}

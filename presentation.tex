@@ -1,0 +1,50 @@
+\documentclass{beamer}
+\mode<presentation>
+{
+  \usetheme{boxes}      
+  \usecolortheme{whale} 
+  \usefonttheme{serif} 
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+\usepackage{graphicx}
+\usepackage{tikz}
+\setbeamercovered{highly dynamic}
+\newcounter{saveenumi}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+\renewcommand{\thefigure}{\thesection-\arabic{figure}}
+\usetikzlibrary{shapes.geometric,calc,angles,positioning,intersections,quotes,decorations,babel,patterns,fit}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphics}
+
+\usepackage{epstopdf}
+\usepackage{standalone}
+\usepackage{gensymb}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,calc,angles,positioning,intersections,quotes,decorations,babel,patterns,fit}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+
+\usepackage{amsmath}
+\title[Your Short Title]{Exercises}
+\author{Durga Prasad}
+\institute{}
+\date{22 December 2019}
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+\input{./chapters/triangle/1.triangle_exercise}
+\input{./chapters/triangle/2.triangle_construction}
+
+\input{./chapters/Circles/circle_constr}
+\input{./chapters/misc}
+\input{./chapters/quad/quad_constr}
+\input{./chapters/Circles/circle_exer}
+\input{./chapters/quad/quad_ex}
+\end{document}

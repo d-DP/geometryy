@@ -1,0 +1,14 @@
+\begin{tikzpicture}[scale =2.5,>=stealth,point/.style = {draw, circle, fill = black, inner sep = 1pt},]
+\node (C) at (4,3)[point,label=above :$\textbf{C(4,3)}$] {};
+\node (A) at (0,0)[point,label=below :$\textbf{A(0,0)}$] {};
+\node (B) at (4,0)[point,label=below :$\textbf{B(4,0)}$] {};
+\node (P) at (5,0)[point,label=below :$\textbf{P(5,0)}$] {};
+\node (M) at (3.2,2.4)[point,label=above :$\textbf{M(3.2,2.4)}$] {};
+\draw (A)--node[below] {$\textrm{a=4cm}$}(B);
+\draw (B)--node[right] {$\textrm{c=3cm}$}(C);
+\draw (C)--node[above right] {$\textrm{b}$}(A);
+\draw (P)--(M);
+\draw (B)--(P);
+\tkzMarkRightAngle[fill=white!45,size=.3,mark=](C,B,A)
+\tkzMarkRightAngle[fill=white!45,size=.3,mark=](A,M,P)
+\end{tikzpicture}

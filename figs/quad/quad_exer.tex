@@ -1,0 +1,24 @@
+\begin{tikzpicture}[scale =2.5,>=stealth,point/.style = {draw, circle, fill = black, inner sep = 2pt},]
+\node (A) at (0,-3)[point,label=below :$\textbf{A(0,-3)}$] {};
+\node (B) at (5,0)[point,label=above :$\textbf{B(5,0)}$] {};
+\node (D) at (-5,0)[point,label=below :$\textbf{D(-5,0)}$] {};
+\node (C) at (0,3)[point,label=above :$\textbf{C(0,3)}$] {};
+\node (S) at (-2.5,-1.5)[point,label=above left :$\textbf{S(-2.5,-1.5)}$] {};
+\node (R) at (-2.5,1.5)[point,label=above left :$\textbf{R(-2.5,1.5)}$] {};
+\node (Q) at (2.5,1.5)[point,label=above right :$\textbf{Q(2.5,1.5)}$] {};
+\node (P) at (2.5,-1.5)[point,label=below right :$\textbf{P(2.5,-1.5)}$] {};
+\draw (A) --(B)--(C)--(D)--(A);
+\draw (P) --(Q)--(R)--(S)--(P);
+\draw (Q) --(S);
+\draw (P) --(R);
+\draw (A) --(C);
+\draw (B) --(D);
+\tkzMarkAngle[fill=black!45,size=.3,mark=](S,P,A)
+\tkzLabelAngle[pos=-0.55](S,P,A){$\angle{3}$}
+\tkzMarkAngle[fill=blue!45,size=.3,mark=](B,P,Q)
+\tkzLabelAngle[pos=0.45](B,P,Q){$\angle{1}$}
+\tkzMarkAngle[fill=red!45,size=.3,mark=](P,Q,B)
+\tkzLabelAngle[pos=0.45](P,Q,B){$\angle{2}$}
+\tkzMarkAngle[fill=green!45,size=.3,mark=](C,Q,R)
+\tkzLabelAngle[pos=0.45](C,Q,R){$\angle{4}$}
+\end{tikzpicture}

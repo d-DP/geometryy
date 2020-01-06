@@ -1,0 +1,60 @@
+\begin{frame}{Quadrilateral construction}
+\begin{enumerate}
+\conti
+\item construct a quadrilateral MIST where MI =3.5, IS = 6.5, $\angle{M}= 75\degree,\angle{I}=105\degree$ and $\angle{s}=120\degree$
+\seti
+\end{enumerate}
+\textbf{Solution:}
+\begin{itemize}
+\item Given that MI=8 and IS=6.5 Apply cosine law for $\triangle{MIS}$
+\begin{align*}
+c=\sqrt{a^{2}+b^{2}-2ab \times \cos\angle{M}}
+\end{align*}
+\item Find S coordinates
+\begin{itemize}
+\item Directon vector for ST is $$m1=\begin{pmatrix}
+1 \\ \tan{135\degree}
+\end{pmatrix}$$
+\item Normal vector for MT is
+\begin{align}
+n_1^T T=n_1^T S
+\end{align}
+\item Direction vector for ST=MT,m2=S-I
+\item Normal vector 
+\begin{align}
+n_2^T{T}=0
+\end{align}
+
+
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}
+\begin{align}
+\begin{pmatrix} n_1 \\ n_2 \end{pmatrix}^T T=\begin{pmatrix}
+n_1^T S \\ n_2^T M
+\end{pmatrix}
+\end{align}
+\begin{figure}[!h]
+\resizebox{0.4\linewidth}{!}
+{
+\input{./figs/quad/quad_constr}
+}
+\caption{Quadrilateral with tikz}
+\label{fig:foo}
+\end{figure}
+\end{frame}
+\begin{frame}
+\begin{figure}[!h]
+\resizebox{0.9\linewidth}{!}
+{
+\includegraphics[scale=0.4]{./figs/quad/quad_constr1.png}
+}
+\caption{Quadrilateral with python}
+\label{fig:foo}
+\end{figure}
+\begin{itemize}
+\item \textbf{python :}\url{https://github.com/d-DP/geometryy/blob/master/codes/quad/quad_constr1.py}\\
+\item \textbf{tikz:} \url{https://github.com/d-DP/geometryy/blob/master/figs/quad/quad_constr.tex}
+\end{itemize}
+\end{frame}

@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale =1.5,>=stealth,point/.style = {draw, circle, fill = black, inner sep = 1pt},]
+\draw (0,0)circle (6cm);
+\node (C) at (10,0)[point,label=above :$\textbf{C(10,0)}$] {};
+\node (A) at (4.5,3.96862697)[point,label=below :$\textbf{A(4.5,3.96)}$] {};
+\node (B) at (0,0)[point,label=below :$\textbf{B(0,0)}$] {};
+\node (D) at (4.5,-3.96862697)[point,label=below :$\textbf{D(4.5,-3.96)}$] {};
+\draw (B)--node[below] {$\textbf{10cm}$}(C)--(D)--(B);
+\draw (B)--(A)--(C);
+\end{tikzpicture}

@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale =1,>=stealth,point/.style = {draw, circle, fill = black, inner sep = 2pt},]
+\node (A) at (8.482904196010466,8.482904196010463)[point,label=above :$\textbf{A(8.48,8.48)}$] {};
+\node (B) at (0,0)[point,label=above :$\textbf{B(0,0)}$] {};
+\node (C) at (8,0)[point,label=below :$\textbf{C(8,0)}$] {};
+\draw[->,thick] (A) -- node[above] {$\textbf{c}$} (B) -- node[below] {$\textbf{a=8cm}$} (C) -- node[below,,xshift=1mm] {$\textbf{b}$} (A);
+%Drawing and marking angles
+\tkzMarkAngle[fill=white!45,size=.3,mark=](C,B,A)
+\tkzLabelAngle[pos=0.65](A,B,C){$45$}
+\end{tikzpicture}
